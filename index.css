@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  /* Header */
+  .header {
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+  }
+  .header .logo {
+    text-align: center;
+    font-size: 24px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 35px;
+    margin: left;
+  
+  }
+  .header .nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  .header .nav ul li {
+    display: inline;
+    margin: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .header .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  
+  /* Home Section */
+  .home {
+    text-align: center;
+    background: #ddd;
+    padding: 200px 0;
+  }
+  .home h2 {
+    font-size: 36px;
+    font-family:'Courier New', Courier, monospace;
+  }
+  
+  .home p {
+    font-size : 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    margin-top : -15px;
+  
+  }
+  .home .button {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius:190px;
+    margin-bottom: 10%;
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 50px 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: #ddd;
+    ;
+  
+  }
+  
+  .about h2{
+    font-size:40px;
+    font-family:'Courier New', Courier, monospace;
+    margin-bottom: 25px;
+  }
+  .tentang{
+    font-display: flex;
+    margin:auto;
+    padding:120px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px
+  }
+  
+  .about img{
+    box-shadow: 0px 0px 30px blueviolet;
+    width: 230px;
+    height: 300px;
+    border: 2px solid purple;
+    border-radius: 10px;
+   
+  }
+  
+  .skills ul {
+    list-style: none;
+    padding: 100px;
+    
+  }
+  
+  .skills h2{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .skills ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color:#000;
+    color: white;
+    transition: 0.5 ;
+  }
+  .projects .project-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+  }
+  .projects .project-item {
+    width: 45%;
+    background: #f4f4f4;
+    padding: 12px;
+    border: 1px solid #000;
+    
+  }
+  
+  .projects h2{
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+  }
+  
+  /* Contact Section */
+  .contact form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+  }
+  
+  .contact h2{
+     font-size: 30px;
+     font-family:'Courier New', Courier, monospace;
+  
+  }
+  .contact input, .contact textarea, .contact button{
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #000;
+    width : 95%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: auto;
+    font-weight: bold;
+    text-align: left;
+  
+  }
+  
+  .contact button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color : black;
+    backface-visibility: hidden;
+    border: 0.3rem solid transparent;
+    border-radius: 3rem;
+    width: 150px;
+    height: 50px;
+    margin: center;
+  }
+  .contact button {
+    border-color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: background-color 0.3s ease-in-out;
+  }
+    
+  .contact button:hover {
+    background-color: rgba(0, 0, 255, 0.267);
+  }
+  
+  /* Footer */
+  .footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Footer Social Icons */
+  .social-icons {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.5s ease;
+  }
+  .social-icons a:hover {
+    color: blue;
+  }

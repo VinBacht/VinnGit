@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">My Portfolio</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="container">
+            <h2 data-aos="zoom-in">Hello, I'm Vino</h2>
+            <p data-aos="zoom-in">I'm a simple web developer</p>
+            <!-- Button Contact Me -->
+            <a href="#contact" class="button contact-me-button" data-aos="zoom-in">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 data-aos="zoom-out">About Me</h2>
+            <img src="gunung.jpg" data-aos="zoom-out">
+            <p data-aos="zoom-out" class="tentang">saya lebih memilih membuat website yang berdesain minimalis dan kinerja yang cukup baik</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 data-aos="fade-left">My Skills</h2>
+            <ul>
+                <li data-aos="fade-left">HTML</li>
+                <li data-aos="fade-left">CSS</li>
+                <li data-aos="fade-left">JavaScript</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 data-aos="fade-left">Projects</h2>
+            <div class="project-list">
+                <div class="project-item" data-aos="fade-left">
+                    <h3>Project 1</h3>
+                    <p>Description of the project.</p>
+                </div>
+                <div class="project-item" data-aos="fade-left">
+                    <h3>Project 2</h3>
+                    <p>Description of the project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-aos="zoom-in">Contact Me</h2>
+            <form data-aos="zoom-in">
+                <input type="text" placeholder="Nama Anda" required>
+                <input type="email" placeholder="Email Anda" required>
+                <textarea placeholder="Pesan Anda" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Vinn. All Rights Reserved.</p>
+        <div class="social-icons" >
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Smooth scrolling for navbar links and buttons
+            const scrollLinks = document.querySelectorAll('.nav ul li a, .contact-me-button'); // Seleksi tautan navbar dan tombol
+
+            scrollLinks.forEach(link => {
+                link.addEventListener('click', event => {
+                    event.preventDefault(); // Cegah aksi default tautan atau tombol
+
+                    const targetId = link.getAttribute('href').substring(1); // Ambil ID target dari href
+                    const targetSection = document.getElementById(targetId); // Temukan elemen dengan ID tersebut
+
+                    if (targetSection) {
+                        // Scroll ke elemen target dengan efek smooth
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth', // Efek scroll halus
+                            block: 'start' // Posisi elemen di awal viewport
+                        });
+                    }
+                });
+            });
+        });
+
+        // Initialize AOS for animations
+        AOS.init();
+    </script>
+</body>
+</html>
