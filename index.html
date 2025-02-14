@@ -1,67 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <title>Portfolio</title>
+    <style>
+        .header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+            z-index: 1000;
+            transition: background 0.3s ease-in-out;
+        }
+        .sticky {
+            background: rgba(0, 0, 0, 1);
+        }
+        body {
+            padding-top: 70px;
+        }
+    </style>
 </head>
+
 <body>
-    <!-- Header Section -->
-    <header class="header">
+    <header class="header" id="navbar">
         <div class="container">
             <h2 class="logo">My Fortofolio</h2>
             <nav class="nav">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" class="scroll-link">Home</a></li>
+                    <li><a href="#about" class="scroll-link">About</a></li>
+                    <li><a href="#skills" class="scroll-link">Skills</a></li>
+                    <li><a href="#projects" class="scroll-link">Projects</a></li>
+                    <li><a href="#contact" class="scroll-link">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Home Section -->
     <section id="home" class="home">
         <div class="container">
             <h2 data-aos="zoom-in">Hello, I'm Vino</h2>
+            <img src="gunung.jpg" data-aos="zoom-in">
             <p data-aos="zoom-in">I'm a simple web developer</p>
-            <!-- Button Contact Me -->
             <a href="#contact" class="button contact-me-button" data-aos="zoom-in">Contact Me</a>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <h2 data-aos="zoom-out">About Me</h2>
-            <img src="gunung.jpg" data-aos="zoom-out">
-            <p data-aos="zoom-out" class="tentang">saya lebih memilih membuat website yang berdesain minimalis dan kinerja yang cukup baik</p>
+            <p data-aos="zoom-out" class="tentang">Saya lebih memilih membuat website yang berdesain minimalis dan kinerja yang cukup baik</p>
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
             <h2 data-aos="fade-left">My Skills</h2>
             <ul>
                 <p data-aos="fade-left">Saya Cukup Bisa Dalam</p>
                 <li data-aos="fade-left">Hyper Text Markup Language</li>
-                <br></br>
                 <p data-aos="fade-left">Dan</p>
                 <li data-aos="fade-left">Cascading Style Sheets</li>
-                <br></br>
                 <p data-aos="fade-left">Dan Juga Bisa Sedikit Dalam</p>
-                <li data-aos="fade-left">Java Script</li>
+                <li data-aos="fade-left">JavaScript</li>
             </ul>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
             <h2 data-aos="fade-left">Projects</h2>
@@ -78,7 +91,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 data-aos="zoom-in">Contact Me</h2>
@@ -93,7 +105,7 @@
 
     <footer class="footer">
         <p>&copy; 2025 Vinn. All Rights Reserved.</p>
-        <div class="social-icons" >
+        <div class="social-icons">
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-tiktok"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
@@ -102,32 +114,60 @@
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="main.js"></script>
     <script>
+        const scrollLinks = document.querySelectorAll('.nav ul li a, .contact-me-button');
         document.addEventListener('DOMContentLoaded', () => {
-            // Smooth scrolling for navbar links and buttons
-            const scrollLinks = document.querySelectorAll('.nav ul li a, .contact-me-button'); // Seleksi tautan navbar dan tombol
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('sticky');
+                } else {
+                    navbar.classList.remove('sticky');
+                }
+            });
 
+            const scrollLinks = document.querySelectorAll('.scroll-link, .contact-me-button');
             scrollLinks.forEach(link => {
                 link.addEventListener('click', event => {
-                    event.preventDefault(); // Cegah aksi default tautan atau tombol
-
-                    const targetId = link.getAttribute('href').substring(1); // Ambil ID target dari href
-                    const targetSection = document.getElementById(targetId); // Temukan elemen dengan ID tersebut
-
+                    event.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
                     if (targetSection) {
-                        // Scroll ke elemen target dengan efek smooth
-                        targetSection.scrollIntoView({
-                            behavior: 'smooth', // Efek scroll halus
-                            block: 'start' // Posisi elemen di awal viewport
+                        window.scrollTo({
+                            top: targetSection.offsetTop - 50,
+                            behavior: 'smooth'
                         });
                     }
                 });
             });
-        });
 
-        // Initialize AOS for animations
+            // Kode JavaScript untuk menyembunyikan placeholder saat input diisi
+            const form = document.querySelector('.contact form');
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Mencegah form dari submit sebenarnya
+
+                // Ambil nilai-nilai form
+                const name = form.querySelector('input[type="text"]').value;
+                const email = form.querySelector('input[type="email"]').value;
+                const message = form.querySelector('textarea').value;
+
+                // Kosongkan field form
+                form.querySelector('input[type="text"]').value = '';
+                form.querySelector('input[type="email"]').value = '';
+                form.querySelector('textarea').value = '';
+
+                // Opsi: Tampilkan pesan konfirmasi atau redirect ke home
+                alert('Pesan terkirim!'); // Atau: window.location.href = '#home';
+
+                // Sembunyikan placeholder (jika Anda masih menginginkan fungsi ini)
+                form.querySelectorAll('input, textarea').forEach(input => {
+                    input.placeholder = input.dataset.placeholder || '';
+                    delete input.dataset.placeholder;
+                });
+            });
+        });
         AOS.init();
     </script>
 </body>
+
 </html>
