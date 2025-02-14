@@ -1,250 +1,264 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
-    
-  }
-  .container {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    overflow: hidden;
-    
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
   
-  /* Header */
-  .header {
-    background: rgb(36, 37, 82);
-    color: #fff;
-    padding: 20px 0;
-  }
+}
+.container {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  
+}
 
-  .header .logo {
-    text-align: center;
-    font-size: 24px;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 35px;
-    margin: left;
-  
-  }
-  .header .nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-  }
-  .header .nav ul li {
-    display: inline;
-    margin: 0 10px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .header .nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  
-  
-  /* Home Section */
-  .home {
-    text-align: center;
-    background: #ddd;
-    padding: 200px 0;
-  
-  }
-  .home h2 {
-    font-size: 40px;
-    font-family: sans-serif;
-  }
-  
-  .home p {
-    font-size : 20px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-    margin-top : -15px;
-  
-  }
+/* Header */
+.header {
+  background: black;
+  color: #fff;
+  zoom: 0.5;
+ 
+}
 
-  .home .button {
-    display: inline-block;
-    background: black;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    margin-top: 20px;
-    border-radius:190px;
-    margin-bottom: 10%;
-    box-shadow:  0px 0px 30px blueviolet;
-    border: 1px solid #000;
-    transition: background-color 1s ease-in-out;
-    width: 130px;
-  }
+.header .logo {
+  margin-left: 4%;
+  font-size: 50px;
+  font-family:'Courier New', Courier, monospace;
+  margin-top: 2%;
+  margin-bottom: -2%;
+  
+}
+.header .nav ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 70%;
+  
+}
 
-  .home .button:hover{
-    background-color: rgba(114, 114, 158, 0.267);
-  }
-  
-  /* Section Styles */
-  section {
-    padding: 50px 0;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    background-color: #ddd;
-    ;
-  
-  }
-  
-  .about h2{
-    font-size:40px;
-    font-family:'Courier New', Courier, monospace;
-    margin-bottom: 25px;
-   
-  }
-  .tentang{
-    font-display: flex;
-    margin:auto;
-    padding:150px;
-    text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px
-  }
-  
-  .about img{
-    box-shadow: 0px 0px 30px blueviolet;
-    width: 230px;
-    height: 300px;
-    border: 3px solid purple;
-    border-radius: 10px;
-   
-  }
-  
-  .skills ul {
-    list-style: none;
-    padding: 90px;
-    
-  }
-  
-  .skills h2{
-    font-size: 30px;
-    font-family: 'Courier New', Courier, monospace;
-  }
-  .skills ul li {
-    display: inline-block;
-    margin: 10px 20px;
-    padding: 20px;
-    border: 2px solid purple;
-    font-weight: bold;
-    border-radius: 15px;
-    background-color: #000;
-    color: white;
-    box-shadow: 0px 0px 30px blueviolet;
-    
-  }
+.header .nav ul li {
+  display: inline;
+  margin: 0 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  .skills .p{
-    font-size: 30px;
-    font-weight:bold;
-    font-family:Arial, Helvetica, sans-serif;
-  }
-  .projects .project-list {
-    display: flex;
-    justify-content: space-around;
-    padding: 100px;
-  }
-  .projects .project-item {
-    width: 45%;
-    background: #f4f4f4;
-    padding: 12px;
-    border: 1px solid #000;
-    
-  }
+.header .nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+  transform: translate(0px,50px);
+}
+
+/* Home Section */
+.home {
   
-  .projects h2{
-    font-size: 30px;
-    font-family:'Courier New', Courier, monospace;
-  }
+  background: #E3EAF5;
+  padding: 130px 0;
+
+}
+.home h2 {
+  font-size: 60px;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 260px;
+  text-align:center;
+  text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+
+
+}
+
+.home img{
+  width: 230px;
+  height:300px;
+  border-radius: 30px;
+  margin-right: 50%;
+  border: 2px solid rgba(87, 72, 224, 0.747);
+  box-shadow: 0px 0px 25px rgb(47, 11, 145);
+  margin-top: -140px;
+}
+.home p {
+  font-size : 30px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  margin-top : -15px;
+  padding-left: 70px;
+  text-align: center;
+  margin-top: -190px;
+  margin-left: 115px;
+}
+
+.home .button {
+  display: inline-block;
+  background: black;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius:190px;
+  margin-bottom: 10%;
+  box-shadow:  0px 0px 30px blueviolet;
+  border: 1.5px solid purple;
+  transition: background-color 1s ease-in-out;
+  width: 130px;
+}
+
+.home .button:hover{
+  background-color: rgba(114, 114, 158, 0.267);
+}
+
+/* Section Styles */
+section {
+  padding: 50px 0;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background-color: #E3EAF5;
+  ;
+
+}
+
+.about h2{
+  font-size:40px;
+  font-family:'Courier New', Courier, monospace;
+  margin-bottom: 25px;
+ 
+}
+.tentang{
+  font-display: flex;
+  margin:auto;
+  padding:150px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px
+}
+
+
+.skills ul {
+  list-style: none;
+  padding: 60px;
   
-  /* Contact Section */
-  .contact form {
-    max-width: 600px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-  }
+}
+
+.skills h2{
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.skills ul li {
+  display: inline-block;
+  margin: 10px 20px;
+  padding: 20px;
+  border: 2px solid purple;
+  font-weight: bold;
+  border-radius: 15px;
+  background-color: #000;
+  color: white;
+  box-shadow: 0px 0px 30px blueviolet;
   
-  .contact h2{
-     font-size: 30px;
-     font-family:'Courier New', Courier, monospace;
+}
+
+.skills .p{
+  font-size: 30px;
+  font-weight:bold;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.projects .project-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px;
+}
+.projects .project-item {
+  width: 45%;
+  background: #f4f4f4;
+  padding: 12px;
+  border: 1px solid #000;
   
-  }
-  .contact input, .contact textarea, .contact button{
-    margin: 10px 0;
-    padding: 10px;
-    width: 100%;
-    border: 1px solid #000;
-    width : 95%;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px;
-    text-align: center;
-    margin-top: auto;
-    font-weight: bold;
-    text-align: left;
+}
+
+.projects h2{
+  font-size: 30px;
+  font-family:'Courier New', Courier, monospace;
+}
+
+/* Contact Section */
+.contact form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.contact h2{
+   font-size: 30px;
+   font-family:'Courier New', Courier, monospace;
+
+}
+.contact input, .contact textarea, .contact button{
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #000;
+  width : 95%;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: auto;
+  font-weight: bold;
+  text-align: left;
+
+}
+
+.contact button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 2rem;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  color : white;
+  backface-visibility: hidden;
+  border: 0.3rem solid transparent;
+  border-radius: 3rem;
+  width: 150px;
+  height: 50px;
+  margin: center;
+}
+.contact button {
+  border-color: black;
+  border-radius: 10px;
+  border: 1px solid black;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow:  0px 0px 20px blueviolet;
+  background-color: black;
+}
   
-  }
-  
-  .contact button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.7rem 2rem;
-    font-weight: 700;
-    font-size: 15px;
-    text-align: center;
-    text-decoration: none;
-    color : white;
-    backface-visibility: hidden;
-    border: 0.3rem solid transparent;
-    border-radius: 3rem;
-    width: 150px;
-    height: 50px;
-    margin: center;
-  }
-  .contact button {
-    border-color: black;
-    border-radius: 10px;
-    border: 1px solid black;
-    transition: background-color 0.3s ease-in-out;
-    box-shadow:  0px 0px 20px blueviolet;
-    background-color: black;
-  }
-    
-  .contact button:hover {
-    background-color: rgba(114, 114, 158, 0.267);
-  }
-  
-  /* Footer */
-  .footer {
-    background: rgb(36, 37, 82);
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  /* Footer Social Icons */
-  .social-icons {
-    text-align: center;
-    margin: 20px 0;
-  }
-  .social-icons a {
-    margin: 0 10px;
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-    transition: color 0.5s ease;
-  }
-  .social-icons a:hover  {
-    color: #1877F2;
-  }
+.contact button:hover {
+  background-color: rgba(114, 114, 158, 0.267);
+}
+
+/* Footer */
+.footer {
+  background: black;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Footer Social Icons */
+.social-icons {
+  text-align: center;
+  margin: 20px 0;
+}
+.social-icons a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+.social-icons a:hover  {
+  color: #1877F2;
+}
