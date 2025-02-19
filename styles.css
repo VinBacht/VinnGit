@@ -145,7 +145,7 @@ section {
 }
 
 .custom-underlinetentang:after{
-  content: "";
+ content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -172,10 +172,29 @@ section {
   
 }
 
+.custom-underlineskill{
+  display: inline-block;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.custom-underlineskill:after{
+ content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: lightgreen;
+  border-radius: 50px;
+}
+
 .skills h2{
   font-size: 30px;
   font-family:'Poppins', sans-serif;
 }
+
+
 .skills ul li {
   display: inline-block;
   margin: 10px 20px;
@@ -202,7 +221,7 @@ section {
 .projects .project-item {
   width: 45%;
   background: #f4f4f4;
-  padding: 12px;
+  padding: 10px;
   border: 1px solid #000;
   
 }
@@ -210,6 +229,23 @@ section {
 .projects h2{
   font-size: 30px;
   font-family:'Poppins', sans-serif;
+}
+
+.custom-underlineproject{
+  display: inline-block;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.custom-underlineproject:after{
+ content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: lightgreen;
+  border-radius: 50px;
 }
 
 /* Contact Section */
@@ -225,6 +261,23 @@ section {
    font-size: 30px;
    font-family:'Poppins', sans-serif;
 
+}
+
+.custom-underlinecontact{
+  display: inline-block;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.custom-underlinecontact:after{
+ content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: lightgreen;
+  border-radius: 50px;
 }
 
 .contact p{
