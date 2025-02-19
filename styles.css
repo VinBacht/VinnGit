@@ -64,18 +64,30 @@ body {
   text-align:center;
   text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
   font-weight: bold;
-  margin-left: -16%;
+  margin-left: -5%;
 
 
+}
+
+.vertical-line {
+  width: 6px; /* Lebar garis */
+  height: 337px; /* Panjang garis */
+  background-color: lightseagreen; /* Warna garis */
+  position: absolute;
+  left: 360px; /* Jarak dari kiri */
+  top: 250px; /* Jarak dari atas */
+  border-radius: 20px;
 }
 
 .home img{
   width: 250px;
   height:350px;
   border-radius: 30px;
-  margin-right: 70%;
-  margin-top: -140px;
+  margin-right: 63%;
+  margin-top: -144px;
 }
+
+
 .home p {
   font-size : 30px;
   font-family:'Poppins', sans-serif;
@@ -84,7 +96,7 @@ body {
   padding-left: -400px;
   text-align: center;
   margin-top: -250px;
-  margin-left: -180px;
+  margin-left: -70px;
 }
 
 .home .button {
@@ -100,7 +112,7 @@ body {
   border: 1.5px solid purple;
   transition: background-color 1s ease-in-out;
   width: 130px;
-  margin-left: -360px;
+  margin-left: -280px;
 }
 
 .home .button:hover{
@@ -126,13 +138,13 @@ section {
  
 }
 
-.custom-underline{
+.custom-underlinetentang{
   display: inline-block;
   position: relative;
   padding-bottom: 5px;
 }
 
-.custom-underline:after{
+.custom-underlinetentang:after{
   content: "";
   position: absolute;
   left: 0;
