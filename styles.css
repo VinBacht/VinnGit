@@ -25,7 +25,7 @@ body {
 .header .logo {
   margin-left: 4%;
   font-size: 50px;
-  font-family:'Poppins', sans-serif;
+  font-family: poppins, sans-serif;
   margin-top: 2%;
   margin-bottom: -2%;
   
@@ -85,12 +85,12 @@ body {
 .vertical-line {
   width: 6px; /* Lebar garis */
   height: 337px; /* Panjang garis */
-  background-color: black; /* Warna garis */
+  background-color: lightseagreen; /* Warna garis */
   position: absolute;
   left: 360px; /* Jarak dari kiri */
-  top: 250px; /* Jarak dari atas */
+  top: 235px; /* Jarak dari atas */
   border-radius: 20px;
-
+  border: 1px solid black;
 }
 
 .home img{
@@ -104,7 +104,7 @@ body {
 
 .home p {
   font-size : 25px;
-  font-family:'Poppins', sans-serif;
+  font-family: sans-serif;
   font-weight: bold;
   margin-top : -15px;
   padding-left: -400px;
@@ -138,7 +138,7 @@ body {
 section {
   padding: 50px 0;
   text-align: center;
-  font-family:'Poppins', sans-serif;
+  font-family:'Poppins',sans-serif;
   font-weight: bold;
   background-color: #E3EAF5;
   ;
@@ -167,6 +167,7 @@ section {
   height: 5px;
   background-color: lightgreen;
   border-radius: 50px;
+  border: 1px solid black;
 }
 .tentang{
   font-display: flex;
@@ -201,6 +202,7 @@ section {
   height: 5px;
   background-color: lightgreen;
   border-radius: 50px;
+  border: 1px solid black;
 }
 
 .skills h2{
@@ -212,7 +214,7 @@ section {
 .skills ul li {
   display: inline-block;
   margin: 10px 20px;
-  padding: 11px;
+  padding: 13px;
   border: 2px solid purple;
   font-weight: bold;
   border-radius: 15px;
@@ -232,18 +234,68 @@ section {
   width: 200px;
   height: 350px;
   margin-left: -1%;
-  margin-top: -3%;
-  border-radius: 50px;
+  margin-top: -20px;
+  border-radius: 10px;
   object-fit: cover;
+  border: 2px solid purple;
+  box-shadow: 0px 0px 30px blueviolet;
+}
+
+.gambar2{
+  margin-right:-570px;
+  margin-top:-408px;
+  
+}
+
+.gambar3{
+  margin-right: -1130px;
+  margin-top:-400px;
+  
+}
+
+.gunung {
+ width: 200px;
+ height: 350px;
+ border-radius: 10px;
+ object-fit:cover;
+ margin-left:530px;
+ margin-top: 20px;
+ border: 2px solid purple;
+ box-shadow: 0px 0px 30px blueviolet;
+ display: flex;
+}
+
+.gunung2 {
+    width: 200px;
+    height: 350px;
+    margin-left: 117%;
+    margin-top: 10px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid purple;
+    box-shadow: 0px 0px 30px blueviolet;
+    display:flex;
 }
 
 .vertical-line2 {
   width: 6px; /* Lebar garis */
   height: 337px; /* Panjang garis */
-  background-color: black; /* Warna garis */
+  background-color: lightskyblue; /* Warna garis */
   position: absolute;
-  left: 470px; /* Jarak dari kiri */
-  top: 2262px; /* Jarak dari atas */
+  left: 483px; /* Jarak dari kiri */
+  top: 2286px; /* Jarak dari atas */
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.vertical-line3 {
+  width: 6px; /* Lebar garis */
+  height: 337px; /* Panjang garis */
+  background-color: lightskyblue; /* Warna garis */
+  position: absolute;
+  border: 1px solid black;
+  left: 770px; /* Jarak dari kiri */
+  top: 2286px; /* Jarak dari atas */
   border-radius: 20px;
 
 }
@@ -273,6 +325,7 @@ section {
   height: 5px;
   background-color: lightgreen;
   border-radius: 50px;
+  border: 1px solid black;
 }
 
 /* Contact Section */
@@ -305,6 +358,7 @@ section {
   height: 5px;
   background-color: lightgreen;
   border-radius: 50px;
+  border: 1px solid black;
 }
 
 .contact p{
